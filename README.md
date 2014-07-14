@@ -21,6 +21,7 @@ name
 
 Example
 -------
+CERECERA y KAYAKS
 ```
 resource ("cerecera", "http://raulete.blogspot.com.es/2014/06/viajes-en-imagenes-cerecera-y-kayak.html")
 trip ("Cerecera/Kayaks", "Valle del Jerte(40.2224710,-5.7519840)", 2014-06-21, #"cerecera")
@@ -32,6 +33,12 @@ tag ("duna")
 tag ("mj")
 tag ("pipe")
 tag ("paola")
+```
+
+
+CRUCERO MEDITERRÁNEO
+```
+resource ("postcrucero2013", "http://raulete.blogspot.com.es/2014/06/viajes-en-imagenes-cerecera-y-kayak.html")
 ```
 
 ¿Otros tags aparte de personas? (#tour2014, #aventuraeuropea) uhmm
