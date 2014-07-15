@@ -10,7 +10,7 @@ trips
 name, geoposition (array?), startdate, resourceId
 
 stages
-name, geoposition, resourceId, tripId
+order, name, geoposition, resourceId, tripId
 
 resources
 name, url
@@ -25,8 +25,8 @@ CERECERA y KAYAKS
 ```
 resource ("cerecera", "http://raulete.blogspot.com.es/2014/06/viajes-en-imagenes-cerecera-y-kayak.html")
 trip ("Cerecera/Kayaks", "Valle del Jerte(40.2224710,-5.7519840)", 2014-06-21, #"cerecera")
-stage ("cerecera", "Valle del Jerte(40.2224710,-5.7519840)", null, #"Cerecera/Kayaks")
-stage ("kayaks", Embalse de Plasencia(40.0776830,-6.0136690)", null, #"Cerecera/Kayaks")
+stage (1, "cerecera", "Valle del Jerte(40.2224710,-5.7519840)", null, #"Cerecera/Kayaks")
+stage (2, "kayaks", Embalse de Plasencia(40.0776830,-6.0136690)", null, #"Cerecera/Kayaks")
 tag ("raul") ¿people table?
 tag ("elvira")
 tag ("duna")
@@ -40,13 +40,13 @@ CRUCERO MEDITERRÁNEO
 ```
 resource ("postcrucero2013", "http://raulete.blogspot.com.es/2013/04/viajes-en-imagenes-crucero-por-el.html")
 trip("Crucero 2013", "Mediterranean Sea(34.5531280,18.0480110)", 2013-03-20, #"crucero")
-stage("Málaga", 36.7212610,-4.4212660, null, #(crucero))
-stage("Túnez", 33.8869170,9.5374990, null, #(crucero))
-stage("Malta", 35.9374960,14.3754160, null, #(crucero))
-stage("Messina", 38.1938140,15.5540150, null, #(crucero))
-stage("Olympia", null, null, #(crucero))
-stage("Atenas", 37.9839170,23.7293600, null, #(crucero))
-stage("Madrid", 40.4167750,-3.7037900, null, #(crucero))
+stage(1, "Málaga", 36.7212610,-4.4212660, null, #(crucero))
+stage(2, "Túnez", 33.8869170,9.5374990, null, #(crucero))
+stage(3, "Malta", 35.9374960,14.3754160, null, #(crucero))
+stage(4, "Messina", 38.1938140,15.5540150, null, #(crucero))
+stage(5, "Olympia", null, null, #(crucero))
+stage(6, "Atenas", 37.9839170,23.7293600, null, #(crucero))
+stage(7, "Madrid", 40.4167750,-3.7037900, null, #(crucero))
 tag("raul")
 tag("elvira")
 tag("manoli")
