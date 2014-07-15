@@ -9,12 +9,11 @@
         <title>Naddoddr</title>
     </head>
     <body>
-        <p>
-            I am {{4 +6}}
-        </p>
-        <p>
-            {{"hello" + " you"}}
-        </p>
+        <div ng-controller="StoreController as store">
+            <h1>{{ store.product.name }}</h1>
+            <h2>${{ store.product.price }}</h2>
+            <p>{{ store.product.description }}</p>
+        </div>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
         <script type="text/javascript" src="javascripts/app.js"></script>
