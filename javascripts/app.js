@@ -4,23 +4,18 @@
 (function(){
     var app = angular.module('store', []);
 
-    app.controller("TripsController", function(){
-        this.trips = trips;
-        console.log(this);
-    });
+    app.controller("TripsController", ["$http", function($http){
+        var tripsCtrl = this;
+        tripsCtrl.trips = [];
 
-    var trips = [
-        {
-            id: 1,
-            name: "Cerecera/Kayaks",
-            description: "Cerecera/Kayaks",
-            geoposition: {lat: 0, lng: 0},
-        },{
-            id: 1,
-            name: "Crucero2013",
-            description: "Crucero2013",
-            geoposition: {lat: 0, lng: 0},
-        }
-    ];
+        //$http({method: 'GET', url: 'http://naddoddr.apiary-mock.com/trips'})
+        $http({method: 'GET', url: 'trips'})
+            .success(function(data){
+                tripsCtrl.trips = data;
+            })
+            .error(function(){
 
+            })
+        ;
+    }]);
 })();

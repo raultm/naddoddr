@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Cerecera/Kayaks",
+        "description": "Cerecera/Kayaks",
+        "geoposition": {"lat": 0, "lng": 0}
+    },{
+        "id": 2,
+        "name": "Crucero2013",
+        "description": "Crucero2013",
+        "geoposition": {"lat": 0, "lng": 0}
+    }
+]
