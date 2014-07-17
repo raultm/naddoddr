@@ -4,23 +4,22 @@
 (function(){
     var app = angular.module('store', []);
 
-    app.controller("StoreController", function(){
-        this.products = gems;
+    app.controller("TripsController", function(){
+        this.trips = trips;
+        console.log(this);
     });
 
-    var gems = [
+    var trips = [
         {
-            name: "Dodecahedron",
-            price: 2.95,
-            description: ". . .",
-            canPurchase: false,
-            soldOut: true,
+            id: 1,
+            name: "Cerecera/Kayaks",
+            description: "Cerecera/Kayaks",
+            geoposition: {lat: 0, lng: 0},
         },{
-            name: "Pentagonal Gem",
-            price: 5.95,
-            description: ". . .",
-            canPurchase: true,
-            soldOut: false,
+            id: 1,
+            name: "Crucero2013",
+            description: "Crucero2013",
+            geoposition: {lat: 0, lng: 0},
         }
     ];
 
