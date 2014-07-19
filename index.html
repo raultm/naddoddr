@@ -5,30 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <meta name="description" content="Naddoddr : Naddoddr" />
 
-        <link rel="stylesheet" type="text/css" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/index.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <title>Naddoddr</title>
     </head>
     <body ng-controller="TripsController as tripsCtrl">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h1>Viajes Interesantes</h1>
+                <h1>Naddoddr</h1>
             </div>
         </div>
-        <div class="row" ng-repeat="trip in tripsCtrl.trips" >
+        <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="trip-item">
-                    <div>
-                        <img  class="trip-item-bg" src="images/watercolor-europe.png">
-                    </div>
-                    <div class="trip-item-content">
-                        <h1>{{ trip.name }}</h1>
-                        <h3>{{ trip.description }}</h3>
-                    </div>
-                </div>
+                <h2>Alfa Version Designs</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Trips List</h3>
+                        <ul class="list-unstyled">
+                            <li><a target='_blank' href="trips-list-v1.html">Version 1</a></li>
+                            <li><a href="#">Version 2</a></li>
+                            <li><a href="#">Version 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Trips Detail</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Version 1</a></li>
+                            <li><a href="#">Version 2</a></li>
+                            <li><a href="#">Version 3</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
     </div>
 
 
