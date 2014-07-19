@@ -9,5 +9,17 @@
         "name": "Crucero2013",
         "description": "Crucero2013",
         "geoposition": {"lat": 0, "lng": 0}
+    },
+    {
+        "id": 3,
+        "name": "Turquía",
+        "description": "Anatolia",
+        "geoposition": {"lat": 0, "lng": 0}
+    },
+    {
+        "id": 4,
+        "name": "Europe",
+        "description": "Tour europeo",
+        "geoposition": {"lat": 0, "lng": 0}
     }
 ]
