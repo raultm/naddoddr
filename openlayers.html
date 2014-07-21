@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>OpenLayers</title>
+
+</head>
+<body>
+    <div style="width:800px; height:600px;background-color: #cccccc" id="map"></div>
+    <script src="javascripts/openlayers.js"></script>
+    <script defer="defer" type="text/javascript">
+        console.log("we");
+        var map = new OpenLayers.Map('map');
+        var wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+                "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
+        map.addLayer(wms);
+        map.zoomToMaxExtent();
+    </script>
+</body>
+</html>
