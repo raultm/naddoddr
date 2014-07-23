@@ -1,5 +1,6 @@
 # References
 
+- [2014-07-23] [OSM - Can I save static image map to not depend on OSM on Trips List?](http://wiki.openstreetmap.org/wiki/Static_map_images)
 - [2014-07-22] [Odyyseeyjs](http://cartodb.github.io/odyssey.js/)
 - [2014-07-19] [ng-repeat in columns](http://stackoverflow.com/questions/22021092/dynamic-column-lengths-with-ng-repeat-and-bootstrap)
 - [2014-07-18] [OpenLayers Example](http://openlayers.org/dev/examples/)
