@@ -3,23 +3,35 @@
         "id": 1,
         "name": "Cerecera/Kayaks",
         "description": "Cerecera/Kayaks",
-        "geoposition": {"lat": 0, "lng": 0}
+        "geoposition": {"lat": 0, "lng": 0},
+        "stages":[]
     },{
         "id": 2,
         "name": "Crucero2013",
         "description": "Crucero2013",
-        "geoposition": {"lat": 0, "lng": 0}
+        "geoposition": {"lat": 0, "lng": 0},
+        "stages":[
+            {"position": 1, "name": "Málaga"},
+            {"position": 2, "name": "Túnez"},
+            {"position": 3, "name": "Malta"},
+            {"position": 4, "name": "Messina"},
+            {"position": 5, "name": "Olympia"},
+            {"position": 6, "name": "Atenas"},
+            {"position": 7, "name": "Madrid"}
+        ]
     },
     {
         "id": 3,
         "name": "Turquía",
         "description": "Anatolia",
-        "geoposition": {"lat": 0, "lng": 0}
+        "geoposition": {"lat": 0, "lng": 0},
+        "stages":[]
     },
     {
         "id": 4,
         "name": "Europe",
         "description": "Tour europeo",
-        "geoposition": {"lat": 0, "lng": 0}
+        "geoposition": {"lat": 0, "lng": 0},
+        "stages":[]
     }
 ]
