@@ -27,6 +27,9 @@
                     <h1>{{ trip.name }}</h1>
                     <h3>{{ trip.description }}</h3>
                     <h3 ng-show="trip.stages.length">Stages: {{ trip.stages.length }}</h3>
+                    <div ng-repeat="stage in trip.stages">
+                        <span>{{ stage.name }}</span>
+                    </div>
                 </div>
             </div>
         </div>
