@@ -32,6 +32,12 @@
         "name": "Europe",
         "description": "Tour europeo",
         "geoposition": {"lat": 0, "lng": 0},
-        "stages":[]
+        "stages":[
+            {"position": 1, "name": "Eindhoven"},
+            {"position": 2, "name": "Bruselas"},
+            {"position": 3, "name": "Brujas"},
+            {"position": 3, "name": "Bruselas"},
+            {"position": 5, "name": "Berlín"}
+        ]
     }
 ]
