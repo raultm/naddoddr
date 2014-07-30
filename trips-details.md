@@ -5,3 +5,5 @@ Differences between Cruise & European Tour (Brugge Staget between two Brussels)
 
 Think about the way to introduce data. There are so much cases.
 
+Use Leaflet instead of openlayers? Is a replace or similar?
+
