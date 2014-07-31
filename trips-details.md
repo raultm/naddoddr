@@ -19,3 +19,5 @@ TDD (Trips name for  Adventures name?)
 - Cruise (Adventures with some stages)
 - European Tour (Adventures with stages with pois)
 
+Is I test an Object like "Adventure", can I use it with angularjs without problems or is better to create a prototype in angularjs
+
