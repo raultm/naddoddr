@@ -1,5 +1,7 @@
 # References
 
+- [2014-08-01] [Yeoman Angular - LET'S SCAFFOLD A WEB APP WITH YEOMAN](http://yeoman.io/codelab.html)
+- [2014-08-01] [Mastering Web Application Development with AngularJS](http://www.packtpub.com/angularjs-web-application-development/book?tag=dp/masteringwebwithangularjs-abr1/0913)
 - [2014-07-23] [Leaflet Library](http://leafletjs.com/index.html)
 - [2014-07-23] [OSM - Can I save static image map to not depend on OSM on Trips List?](http://wiki.openstreetmap.org/wiki/Static_map_images)
 - [2014-07-22] [Odyyseeyjs](http://cartodb.github.io/odyssey.js/)
