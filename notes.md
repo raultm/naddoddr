@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-02] [Grunt Problem After Yeoman Scaffolding](http://stackoverflow.com/questions/18114666/grunt-fatal-error-unable-to-find-local-grunt-in-yeoman)
 - [2014-08-01] [Yeoman Angular - LET'S SCAFFOLD A WEB APP WITH YEOMAN](http://yeoman.io/codelab.html)
 - [2014-08-01] [Mastering Web Application Development with AngularJS](http://www.packtpub.com/angularjs-web-application-development/book?tag=dp/masteringwebwithangularjs-abr1/0913)
 - [2014-07-23] [Leaflet Library](http://leafletjs.com/index.html)
