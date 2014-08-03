@@ -16,9 +16,13 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable'
+    'ui.sortable',
+    'LocalStorageModule'
   ])
-  .config(function ($routeProvider) {
+    .config(['localStorageServiceProvider', function(localStorageServiceProvider){
+        localStorageServiceProvider.setPrefix('naddoddr');
+    }])
+    .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -31,4 +35,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+    });
