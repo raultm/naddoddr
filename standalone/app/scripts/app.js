@@ -35,4 +35,19 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-    });
+    })
+    .factory('DataProvider', function() {
+        var adventures = [{ 'name': 'Jerez de la Frontera' }];
+
+        var DataProvider = function() {
+
+        };
+
+        DataProvider.prototype.getAdventures = function(){
+            return adventures;
+        };
+
+        return DataProvider;
+    })
+
+;
