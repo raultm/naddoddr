@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('naddoddrApp', [
     'ngAnimate',
@@ -36,18 +37,9 @@ angular
         redirectTo: '/'
       });
     })
-    .factory('DataProvider', function() {
-        var adventures = [{ 'name': 'Jerez de la Frontera' }];
-
-        var DataProvider = function() {
-
-        };
-
-        DataProvider.prototype.getAdventures = function(){
-            return adventures;
-        };
-
-        return DataProvider;
-    })
-
+    .factory('DataProvider', [function() {
+        return new naddoddr.Adventure();
+    }])
 ;
+
+

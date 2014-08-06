@@ -9,10 +9,8 @@
  */
 
 angular.module('naddoddrApp')
-    .controller('MainCtrl', function ($scope, localStorageService, DataProvider) {
+    .controller('MainCtrl', function ($scope, localStorageService) {
 
-        var dataProvider = new DataProvider();
-        //console.log(dataProvider.getAdventures());
         var todosInStore = localStorageService.get('todos');
 
         $scope.todos = todosInStore && todosInStore.split('\n') || [];

@@ -1,14 +1,25 @@
-var naddoddr = {};
 
-(function(naddoddr){
+(function(window, $, undefined){
     'use strict';
-    naddoddr.Adventure = function(){
-        this.name = 'La Antilla';
+    var naddoddr = {};
+
+    var defaultAdventure = {
+        'name': '',
+        'description': ''
     };
 
-    var adventure = new naddoddr.Adventure();
-    console.log(adventure.name);
+    naddoddr.Adventure = function(adventureValues){
+        this._fields = jQuery.extend(defaultAdventure, adventureValues);
 
-})(naddoddr);
+        this.getName = function(){
+            return this._fields.name;
+        };
+    };
 
+    naddoddr.Adventure.prototype.get = function(fieldName){
+        if(!this._fields[fieldName]){ return false; }
+        return this._fields[fieldName];
+    }
 
+    window.naddoddr = naddoddr;
+})(window);

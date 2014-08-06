@@ -32,13 +32,4 @@ describe('Controller: MainCtrl', function () {
         scope.removeTodo(0);
         expect(scope.todos.length).toBe(0);
     });
-
-//    xit('should add then remove an item from the list', function () {
-//        expect(DataProvider.getAdventures().length).toBe(0);
-//    });
-
-    it('can get an instance of my factory', inject(function(DataProvider) {
-        expect(DataProvider).toBeDefined();
-        console.log(DataProvider);
-    }));
 });
