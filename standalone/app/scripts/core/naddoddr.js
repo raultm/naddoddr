@@ -10,14 +10,10 @@
 
     naddoddr.Adventure = function(adventureValues){
         this._fields = jQuery.extend(defaultAdventure, adventureValues);
-
-        this.getName = function(){
-            return this._fields.name;
-        };
     };
 
     naddoddr.Adventure.prototype.get = function(fieldName){
-        if(!this._fields[fieldName]){ return false; }
+        if(this._fields[fieldName] === undefined ){ return false; }
         return this._fields[fieldName];
     }
 

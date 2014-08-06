@@ -17,8 +17,9 @@ describe('Core: Adventure', function () {
     });
 
     it('should return Adventure Name', function () {
-        var adventure = new naddoddr.Adventure({});
-        expect(adventure.getName()).toBe("");
+        var adventure = new naddoddr.Adventure({})
+        console.log(adventure);
+        expect(adventure.get('name')).toBe('');
     });
 
     it('should recover any field', function () {
