@@ -1,5 +1,7 @@
 # References
 
+- [2014-08-07] [Methods Within Constructor vs Prototype in Javascript](http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/)
+- [2014-08-05] [Phonecat Tutorial App](https://docs.angularjs.org/tutorial)
 - [2014-08-03] [Object-oriented AngularJS Services](http://blog.revolunet.com/blog/2014/02/14/angularjs-services-inheritance/)
 - [2014-08-03] [Unit Testing Best Practices in AngularJS](http://andyshora.com/unit-testing-best-practices-angularjs.html)
 - [2014-08-02] [Grunt Problem After Yeoman Scaffolding](http://stackoverflow.com/questions/18114666/grunt-fatal-error-unable-to-find-local-grunt-in-yeoman)
