@@ -13,6 +13,12 @@ describe('Naddoddr: App', function () {
         it('should have a function to parseToAdventures', inject(function(naddoddrProvider) {
             expect(naddoddrProvider.parseToAdventures).toBeDefined();
         }));
+
+        describe('parseToAdventures', function(){
+            it('should return empty Array if no params', inject(function(naddoddrProvider) {
+                expect(naddoddrProvider.parseToAdventures().length).toBe(0);
+            }));
+        });
     });
 
 });

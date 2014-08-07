@@ -39,7 +39,9 @@ angular
     })
     .factory('naddoddrProvider', [function() {
         return {
-            'parseToAdventures': function(){}
+            'parseToAdventures': function(){
+                return [];
+            }
         };
     }])
 ;
