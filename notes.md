@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-07] [String to lat/lng with OSM](https://help.openstreetmap.org/questions/17722/convert-a-place-name-to-latitude-and-longitude)
 - [2014-08-07] [Countries Flags repo](https://github.com/lafeber/world-flags-sprite)
 - [2014-08-07] [Countries Flags with Leaflet Directive](http://tombatossals.github.io/angular-leaflet-directive/examples/geojson-example.html)
 - [2014-08-07] [Angular Leaflet Directive](http://tombatossals.github.io/angular-leaflet-directive/)
