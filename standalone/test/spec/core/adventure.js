@@ -18,7 +18,6 @@ describe('Core: Adventure', function () {
 
     it('should return Adventure Name', function () {
         var adventure = new naddoddr.Adventure({})
-        console.log(adventure);
         expect(adventure.get('name')).toBe('');
     });
 

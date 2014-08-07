@@ -37,8 +37,10 @@ angular
         redirectTo: '/'
       });
     })
-    .factory('DataProvider', [function() {
-        return new naddoddr.Adventure();
+    .factory('naddoddrProvider', [function() {
+        return {
+            'parseToAdventures': function(){}
+        };
     }])
 ;
 
