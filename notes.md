@@ -1,5 +1,8 @@
 # References
 
+- [2014-08-07] [Countries Flags repo](https://github.com/lafeber/world-flags-sprite)
+- [2014-08-07] [Countries Flags with Leaflet Directive](http://tombatossals.github.io/angular-leaflet-directive/examples/geojson-example.html)
+- [2014-08-07] [Angular Leaflet Directive](http://tombatossals.github.io/angular-leaflet-directive/)
 - [2014-08-07] [String (day/month/year) to Timestamp Directive](http://stackoverflow.com/questions/20677970/angularjs-get-timestamp-from-a-human-readable-date)
 - [2014-08-07] [AngularJS Date](https://docs.angularjs.org/api/ng/filter/date)
 - [2014-08-07] [Methods Within Constructor vs Prototype in Javascript](http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/)
