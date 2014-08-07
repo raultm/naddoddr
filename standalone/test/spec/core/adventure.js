@@ -24,8 +24,10 @@ describe('Core: Adventure', function () {
 
     it('should recover any field', function () {
         var name = 'La Antilla';
-        var adventure = new naddoddr.Adventure({'name':name});
+        var description = 'Duna se mete en el mar!'
+        var adventure = new naddoddr.Adventure({'name': name, 'description': description});
         expect(adventure.get('name')).toBe(name);
+        expect(adventure.get('description')).toBe(description);
     });
 
     it('should return false if field doesnt exist', function () {

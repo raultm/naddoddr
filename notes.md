@@ -1,5 +1,7 @@
 # References
 
+- [2014-08-07] [String (day/month/year) to Timestamp Directive](http://stackoverflow.com/questions/20677970/angularjs-get-timestamp-from-a-human-readable-date)
+- [2014-08-07] [AngularJS Date](https://docs.angularjs.org/api/ng/filter/date)
 - [2014-08-07] [Methods Within Constructor vs Prototype in Javascript](http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/)
 - [2014-08-05] [Phonecat Tutorial App](https://docs.angularjs.org/tutorial)
 - [2014-08-03] [Object-oriented AngularJS Services](http://blog.revolunet.com/blog/2014/02/14/angularjs-services-inheritance/)
