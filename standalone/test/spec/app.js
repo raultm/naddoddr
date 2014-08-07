@@ -18,6 +18,11 @@ describe('Naddoddr: App', function () {
             it('should return empty Array if no params', inject(function(naddoddrProvider) {
                 expect(naddoddrProvider.parseToAdventures().length).toBe(0);
             }));
+
+            it('should return Adventure instance if array of one object', inject(function(naddoddrProvider) {
+                var objects = [{'name': 'La Antilla'}];
+                expect(naddoddrProvider.parseToAdventures(objects).length).toBe(1);
+            }));
         });
     });
 
