@@ -9,7 +9,7 @@
     };
 
     naddoddr.Adventure = function(adventureValues){
-        this._fields = jQuery.extend(defaultAdventure, adventureValues);
+        this._fields = $.extend(defaultAdventure, adventureValues);
     };
 
     naddoddr.Adventure.prototype.get = function(fieldName){
@@ -18,4 +18,4 @@
     }
 
     window.naddoddr = naddoddr;
-})(window);
+})(window, jQuery);

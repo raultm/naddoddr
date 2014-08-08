@@ -30,6 +30,7 @@ module.exports = function(config) {
         'bower_components/jquery-ui/ui/jquery-ui.js',
         'bower_components/angular-ui-sortable/sortable.js',
         'bower_components/angular-local-storage/angular-local-storage.js',
+        'app/scripts/core/naddoddr.js',
         'app/scripts/**/*.js',
         'test/mock/**/*.js',
         'test/spec/**/*.js'

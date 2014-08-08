@@ -30,7 +30,7 @@ describe('Core: Adventure', function () {
     });
 
     it('should return false if field doesnt exist', function () {
-        var name = 'La Antilla';
+        var name = 'La Antillas';
         var adventure = new naddoddr.Adventure({'name':name});
         expect(adventure.get('inventedField')).toBe(false);
     });
