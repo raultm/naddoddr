@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: AdventuresCtrl', function () {
 
   // load the controller's module
   beforeEach(module('naddoddrApp'));
 
-  var   MainCtrl,
+  var   AdventuresCtrl,
         scope;
 
   // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
-        MainCtrl = $controller('MainCtrl', {
+        AdventuresCtrl = $controller('AdventuresCtrl', {
           $scope: scope
         });
     }));
