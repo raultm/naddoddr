@@ -46,7 +46,8 @@ describe('Core:Data Mock', function () {
     });
 
     it('should return basic adventure if ask for Id 1', function () {
-        expect(naddoddr.Mock.Adventure.findById(1)).toBe(naddoddr.Mock.Adventure.basic);
+        var adventure = naddoddr.Mock.Adventure.parseObject(naddoddr.Mock.Adventure.basic);
+        expect(naddoddr.Mock.Adventure.findById(1)).toEqual(adventure);
     });
 
     it('should return false if asked by id tha doesnt exist', function () {

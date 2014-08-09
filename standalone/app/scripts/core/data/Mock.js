@@ -21,7 +21,7 @@
         var adventures = naddoddr.Mock.Adventure.adventures;
         for(var index in adventures){
             if(adventures[index]._id == id){
-                return adventures[index];
+                return naddoddr.Mock.Adventure.parseObject(adventures[index]);
             }
         }
         return false;
