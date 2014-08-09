@@ -9,7 +9,7 @@
  */
 
 angular.module('naddoddrApp')
-    .controller('MainCtrl', function ($scope) {
+    .controller('AdventuresCtrl', function ($scope) {
 
         $scope.adventures = [];
 //        var todosInStore = localStorageService.get('todos');
