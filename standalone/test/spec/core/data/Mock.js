@@ -8,6 +8,7 @@ describe('Core:Data Mock', function () {
 
     it('should have a basic adventure ', function () {
         expect(naddoddr.Mock.Adventure.basic).toBeDefined();
+        expect(naddoddr.Mock.Adventure.basic._id).toBe(1);
         expect(naddoddr.Mock.Adventure.basic.name).toBe('La Antilla');
         expect(naddoddr.Mock.Adventure.basic.description).toBe('Primer Baño de Duna en el Mar');
         expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
@@ -20,6 +21,14 @@ describe('Core:Data Mock', function () {
 
     it('should return all Adventures if findAll', function () {
         expect(naddoddr.Mock.Adventure.findAll()).toBe(naddoddr.Mock.Adventure.adventures);
+    });
+
+    it('should return basic adventure if ask for Id 1', function () {
+        expect(naddoddr.Mock.Adventure.findById(1)).toBe(naddoddr.Mock.Adventure.basic);
+    });
+
+    it('should return false if asked by id tha doesnt exist', function () {
+        expect(naddoddr.Mock.Adventure.findById(1234)).toBe(false);
     });
 
 });
