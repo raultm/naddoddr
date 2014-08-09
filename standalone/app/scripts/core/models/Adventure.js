@@ -6,7 +6,9 @@
     };
 
     function Adventure(adventureValues){
-        this._fields = $.extend(defaultAdventure, adventureValues);
+        this._fields = {};
+        $.extend(this._fields, defaultAdventure, adventureValues);
+        
     }
 
     Adventure.prototype.get = function(fieldName){

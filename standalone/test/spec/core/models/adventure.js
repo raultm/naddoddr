@@ -2,6 +2,10 @@
 
 describe('Core: Adventure', function () {
 
+    beforeEach(function(){
+
+    });
+
     it('should exists in naddoddr namespace ', function () {
         expect(naddoddr.Adventure).toBeDefined();
     });
