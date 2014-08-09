@@ -77,3 +77,31 @@ body {
     border-bottom: 0;
   }
 }
+
+
+.adventure-item{
+    margin-bottom: 15px;
+}
+
+.adventure-item-bg{
+    width:100%;
+}
+
+.adventure-item-content {
+    position: absolute;
+    top: 0;
+    right:0;
+    left:0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #cccccc;
+}
+
+.transparent{
+    background-color: rgba(200, 200, 200, 0.6);
+}

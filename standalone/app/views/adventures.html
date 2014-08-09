@@ -1,26 +1,20 @@
 <div class="container">
     <h2>Adventures</h2>
 
-    <!-- Todos input -->
-    <form role="form" ng-submit="addTodo()">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
+    <!-- Adventures list -->
+    <div ui-sortable ng-model="adventures">
+        <div class="row" ng-repeat="adventure in adventures" style="padding:5px 10px; cursor: move;">
+            <div class="col-md-12">
+                <div class="adventure-item">
+                    <div>
+                        <img  class="adventure-item-bg" src="images/watercolor-europe.png">
+                    </div>
+                    <div class="adventure-item-content transparent">
+                        <h1>{{ adventure.get('name') }}</h1>
+                        <h3>{{ adventure.get('description') }}</h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </form>
-    <p></p>
-
-    <!-- Todos list -->
-    <div ui-sortable ng-model="todos">
-        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-        <input type="text" ng-model="todo" class="form-control">
-        <span class="input-group-btn">
-            <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-        </span>
-        </p>
     </div>
 </div>
