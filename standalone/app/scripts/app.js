@@ -39,7 +39,7 @@ angular
     })
     .value('naddoddrProviderType', naddoddr.dataProvider)
     .factory('naddoddrProvider', ['naddoddrProviderType', function(naddoddrProviderType) {
-        if(naddoddrProviderType) {
+        if(naddoddrProviderType === 'Mock') {
             return naddoddr.Mock;
         }
         return;
