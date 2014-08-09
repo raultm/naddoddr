@@ -37,8 +37,12 @@ angular
         redirectTo: '/'
       });
     })
-    .factory('naddoddrProvider', [function() {
-        return naddoddr.Mock;
+    .value('naddoddrProviderType', naddoddr.dataProvider)
+    .factory('naddoddrProvider', ['naddoddrProviderType', function(naddoddrProviderType) {
+        if(naddoddrProviderType) {
+            return naddoddr.Mock;
+        }
+        return;
     }])
 ;
 
