@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-10] [__noSuchMethod__ in v8?](http://dailyjs.com/2010/03/12/nosuchmethod/)
 - [2014-08-09] [Exchanging module values in AngularJS test](http://stackoverflow.com/questions/18253417/exchanging-module-values-in-angularjs-test)
 - [2014-08-08] [Jasmine Comparing Objects toBe doesn't work](http://stackoverflow.com/questions/15487510/angularjs-jasmine-comparing-objects)
 - [2014-08-07] [SO - Using scope.$watch and scope.$apply](http://stackoverflow.com/questions/15112584/using-scope-watch-and-scope-apply)
