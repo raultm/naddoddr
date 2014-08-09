@@ -41,7 +41,8 @@ describe('Core:Data Mock', function () {
     });
 
     it('should return all Adventures if findAll', function () {
-        expect(naddoddr.Mock.Adventure.findAll()).toBe(naddoddr.Mock.Adventure.adventures);
+        var adventures = naddoddr.Mock.Adventure.parseObjects(naddoddr.Mock.Adventure.adventures);
+        expect(naddoddr.Mock.Adventure.findAll()).toEqual(adventures);
     });
 
     it('should return basic adventure if ask for Id 1', function () {

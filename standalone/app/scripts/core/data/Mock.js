@@ -14,7 +14,7 @@
     ];
 
     naddoddr.Mock.Adventure.findAll = function(){
-        return naddoddr.Mock.Adventure.adventures;
+        return naddoddr.Mock.Adventure.parseObjects(naddoddr.Mock.Adventure.adventures);
     }
 
     naddoddr.Mock.Adventure.findById = function(id){
