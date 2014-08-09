@@ -9,9 +9,8 @@
  */
 
 angular.module('naddoddrApp')
-    .controller('AdventuresCtrl', function ($scope) {
-
-        $scope.adventures = [];
+    .controller('AdventuresCtrl', ['$scope', 'naddoddrProvider', function ($scope, naddoddrProvider) {
+        $scope.adventures = naddoddrProvider.Adventure.findAll();
 //        var todosInStore = localStorageService.get('todos');
 //
 //        $scope.todos = todosInStore && todosInStore.split('\n') || [];
@@ -29,4 +28,4 @@ angular.module('naddoddrApp')
 //            $scope.todos.splice(index, 1);
 //        };
 
-    });
+    }]);
