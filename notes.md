@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-08] [Jasmine Comparing Objects toBe doesn't work](http://stackoverflow.com/questions/15487510/angularjs-jasmine-comparing-objects)
 - [2014-08-07] [SO - Using scope.$watch and scope.$apply](http://stackoverflow.com/questions/15112584/using-scope-watch-and-scope-apply)
 - [2014-08-07] [String to lat/lng with OSM](https://help.openstreetmap.org/questions/17722/convert-a-place-name-to-latitude-and-longitude)
 - [2014-08-07] [Countries Flags repo](https://github.com/lafeber/world-flags-sprite)

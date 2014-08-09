@@ -27,5 +27,8 @@
         return false;
     }
 
+    naddoddr.Mock.Adventure.parseObject = function(object) {
+        return new naddoddr.Adventure(object);
+    }
 
 })(window, naddoddr);
