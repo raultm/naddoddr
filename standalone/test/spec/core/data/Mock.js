@@ -31,6 +31,14 @@ describe('Core:Data Mock', function () {
         expect(naddoddr.Mock.Adventure.parseObject(basicObject)).toEqual(basicAdventure);
     });
 
+    it('should have a function to parse Objects to Adventures', function(){
+        var basicObjects = [{}, naddoddr.Mock.Adventure.basic];
+        var basicAdventures = [
+            new naddoddr.Adventure(basicObjects[0]),
+            new naddoddr.Adventure(basicObjects[1])
+        ]
+        expect(naddoddr.Mock.Adventure.parseObjects(basicObjects)).toEqual(basicAdventures);
+    });
 
     it('should return all Adventures if findAll', function () {
         expect(naddoddr.Mock.Adventure.findAll()).toBe(naddoddr.Mock.Adventure.adventures);

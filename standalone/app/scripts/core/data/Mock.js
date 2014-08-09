@@ -31,4 +31,12 @@
         return new naddoddr.Adventure(object);
     }
 
+    naddoddr.Mock.Adventure.parseObjects = function(objects) {
+        var adventures=[];
+        for(var i in objects){
+            adventures.push(naddoddr.Mock.Adventure.parseObject(objects[i]));
+        }
+        return adventures;
+    }
+
 })(window, naddoddr);
