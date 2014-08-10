@@ -11,7 +11,11 @@
         $.extend(this._fields, defaultAdventure, adventureValues);
         var geopoints = this.getGeopoints();
         if(geopoints.length > 0){
-            this.center = geopoints[0];
+            this.center = {
+                'lat': geopoints[0].lat,
+                'lng': geopoints[0].lng,
+                'zoom': 14
+            };
         }
     }
 
