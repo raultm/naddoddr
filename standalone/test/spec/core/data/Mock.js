@@ -11,6 +11,7 @@ describe('Core:Data Mock', function () {
         expect(naddoddr.Mock.Adventure.basic._id).toBe(1);
         expect(naddoddr.Mock.Adventure.basic.name).toBe('La Antilla');
         expect(naddoddr.Mock.Adventure.basic.description).toBe('Primer Baño de Duna en el Mar');
+        expect(naddoddr.Mock.Adventure.basic.geoposition).toEqual({'lat': 37.2071, 'lng':-7.2091});
         expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
     });
 
