@@ -45,4 +45,9 @@ describe('Core: Adventure', function () {
         expect(AntillaAdventure.getGeopoints()[0]).toEqual({'lat': 37.2071, 'lng': -7.2091});
     });
 
+    it('should have a center attribute', function () {
+        var AntillaAdventure = naddoddr.Mock.Adventure.findById(1);
+        expect(AntillaAdventure.center).toEqual({'lat': 37.2071, 'lng': -7.2091});
+    });
+
 });
