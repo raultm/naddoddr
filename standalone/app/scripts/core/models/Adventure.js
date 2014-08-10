@@ -11,6 +11,7 @@
         $.extend(this._fields, defaultAdventure, adventureValues);
         this.markers = this.getMarkers();
         this.center = this.calculateCenter();
+        this.paths = this.getPaths();
     }
 
     Adventure.prototype.get = function(fieldName){
@@ -51,14 +52,23 @@
             };
         }
 
-        if(geopoints.length == 2) {
+        if(geopoints.length > 1) {
             var center = geolib.getCenter(geopoints);
             return {
                 'lat': parseFloat(center.latitude),
                 'lng': parseFloat(center.longitude),
-                'zoom': 14
+                'zoom': this.getZoomByDistance(center.distance)
             };
         }
+    }
+
+    Adventure.prototype.getZoomByDistance = function(distance){
+        // Cerecera Distance -> 11.081
+        return 12;
+    }
+
+    Adventure.prototype.getPaths = function(){
+        return [{'color': '#008000', 'weight': 8, 'latlngs':this.getGeopoints()}];
     }
 
     naddoddr.Adventure = Adventure;
