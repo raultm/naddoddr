@@ -6,8 +6,14 @@
     naddoddr.Mock.Adventure.basic = {
         '_id': 1,
         'name': 'La Antilla',
-        'description': 'Primer Baño de Duna en el Mar',
-        'geoposition': {'lat': 37.2071, 'lng':-7.2091}
+        'description': 'Vacaciones Verano 2014',
+        'stages': [
+            {
+                'name': 'La Antilla',
+                'content': 'Duna se baña por primera vez en el Mar',
+                'geoposition': {'lat': 37.2071, 'lng': -7.2091}
+            }
+        ]
     };
 
     naddoddr.Mock.Adventure.adventures = [
