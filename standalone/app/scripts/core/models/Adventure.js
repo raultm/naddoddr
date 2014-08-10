@@ -2,7 +2,8 @@
     'use strict';
     var defaultAdventure = {
         'name': '',
-        'description': ''
+        'description': '',
+        'stages': []
     };
 
     function Adventure(adventureValues){
@@ -16,6 +17,14 @@
         return this._fields[fieldName];
     }
 
+    Adventure.prototype.getGeopoints = function(){
+        var stages = this.get('stages');
+        var geopoints = [];
+        for(var i in stages){
+            geopoints.push(stages[i].geopoint);
+        }
+        return geopoints;
+    }
     naddoddr.Adventure = Adventure;
 
 })(window, jQuery, naddoddr);

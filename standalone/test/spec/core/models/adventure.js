@@ -39,5 +39,9 @@ describe('Core: Adventure', function () {
         expect(adventure.get('inventedField')).toBe(false);
     });
 
+    it('should return array of geopoints', function () {
+        var AntillaAdventure = naddoddr.Mock.Adventure.findById(1);
+        expect(AntillaAdventure.getGeopoints().length).toBe(1);
+    });
 
 });
