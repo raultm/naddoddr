@@ -1,4 +1,4 @@
-(function(window, $, naddoddr, undefined){
+(function(window, $, naddoddr, geolib, undefined){
     'use strict';
     var defaultAdventure = {
         'name': '',
@@ -10,14 +10,7 @@
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
         this.markers = this.getMarkers();
-        var geopoints = this.getGeopoints();
-        if(geopoints.length > 0){
-            this.center = {
-                'lat': geopoints[0].lat,
-                'lng': geopoints[0].lng,
-                'zoom': 14
-            };
-        }
+        this.center = this.calculateCenter();
     }
 
     Adventure.prototype.get = function(fieldName){
@@ -48,6 +41,26 @@
         return markers;
     }
 
+    Adventure.prototype.calculateCenter = function(){
+        var geopoints = this.getGeopoints();
+        if(geopoints.length == 1){
+            return {
+                'lat': geopoints[0].lat,
+                'lng': geopoints[0].lng,
+                'zoom': 14
+            };
+        }
+
+        if(geopoints.length == 2) {
+            var center = geolib.getCenter(geopoints);
+            return {
+                'lat': parseFloat(center.latitude),
+                'lng': parseFloat(center.longitude),
+                'zoom': 14
+            };
+        }
+    }
+
     naddoddr.Adventure = Adventure;
 
-})(window, jQuery, naddoddr);
+})(window, jQuery, naddoddr, geolib);

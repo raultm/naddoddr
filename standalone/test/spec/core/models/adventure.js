@@ -61,4 +61,9 @@ describe('Core: Adventure', function () {
         expect(AntillaAdventure.markers).toEqual([{'message': 'La Antilla', 'lat': 37.2071, 'lng': -7.2091}]);
     });
 
+    it('should have a center attribute with the middle if two stages', function () {
+        var CereceraAdventure = naddoddr.Mock.Adventure.findById(2);
+        expect(CereceraAdventure.center).toEqual({'lat': 40.095186, 'lng': -5.952822, 'zoom': 14});
+    });
+
 });
