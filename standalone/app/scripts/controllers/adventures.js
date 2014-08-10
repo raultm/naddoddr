@@ -10,7 +10,13 @@
 
 angular.module('naddoddrApp')
     .controller('AdventuresCtrl', ['$scope', 'naddoddrProvider', function ($scope, naddoddrProvider) {
+        angular.extend($scope,{
+            defaults: {
+                scrollWheelZoom: false
+            }
+        });
         $scope.adventures = naddoddrProvider.Adventure.findAll();
+
 //        var todosInStore = localStorageService.get('todos');
 //
 //        $scope.todos = todosInStore && todosInStore.split('\n') || [];

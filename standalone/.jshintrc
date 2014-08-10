@@ -21,6 +21,8 @@
   "globals": {
     "angular": false,
     "naddoddr": false,
-    "jQuery": false
+    "jQuery": false,
+    "L": false,
+    "lvector": false
   }
 }
