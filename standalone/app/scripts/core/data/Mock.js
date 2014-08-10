@@ -11,7 +11,7 @@
             {
                 'name': 'La Antilla',
                 'content': 'Duna se baña por primera vez en el Mar',
-                'geoposition': {'lat': 37.2071, 'lng': -7.2091}
+                'geopoint': {'lat': 37.2071, 'lng': -7.2091}
             }
         ]
     };

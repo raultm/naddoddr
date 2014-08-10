@@ -14,7 +14,7 @@ describe('Core:Data Mock', function () {
         expect(naddoddr.Mock.Adventure.basic.stages.length).toBe(1);
         expect(naddoddr.Mock.Adventure.basic.stages[0].name).toBe('La Antilla');
         expect(naddoddr.Mock.Adventure.basic.stages[0].content).toBe('Duna se baña por primera vez en el Mar');
-        expect(naddoddr.Mock.Adventure.basic.stages[0].geoposition).toEqual({'lat': 37.2071, 'lng': -7.2091});
+        expect(naddoddr.Mock.Adventure.basic.stages[0].geopoint).toEqual({'lat': 37.2071, 'lng': -7.2091});
         expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
     });
 
