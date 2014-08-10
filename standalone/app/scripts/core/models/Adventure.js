@@ -33,6 +33,20 @@
         return geopoints;
     }
 
+    Adventure.prototype.getMarkers = function(){
+        var stages = this.get('stages');
+        var markers = [];
+        for(var i in stages){
+            var marker = {
+                'message': stages[i].name,
+                'lat': stages[i].geopoint.lat,
+                'lng': stages[i].geopoint.lng
+            }
+            markers.push(marker);
+        }
+        return markers;
+    }
+
     naddoddr.Adventure = Adventure;
 
 })(window, jQuery, naddoddr);
