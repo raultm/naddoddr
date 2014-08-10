@@ -15,11 +15,6 @@ angular.module('naddoddrApp')
         console.log(geopoint);
         angular.extend($scope,{
             defaults: {
-                center: {
-                    lat: geopoint.lat,
-                    lng: geopoint.lng,
-                    zoom: 4
-                },
                 scrollWheelZoom: false
             }
         });
