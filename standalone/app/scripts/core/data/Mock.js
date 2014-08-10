@@ -16,7 +16,26 @@
         ]
     };
 
+    naddoddr.Mock.Adventure.twostages = {
+        '_id': 2,
+        'name': 'Cerecera y Kayaks',
+        'description': 'Valle del Jerte, Cerezas, Familia y Kayaks',
+        'stages': [
+            {
+                'name': 'Cabrero',
+                'content': 'La cuadrillas a por cerezas, Duna ruta por el pueblo',
+                'geopoint': {'lat': 40.112689, 'lng': -5.891976}
+            },
+            {
+                'name': 'Kayaks',
+                'content': 'Kayaks con Guia2 en el Embalse de Plasencia',
+                'geopoint': {'lat': 40.077683, 'lng': -6.013669}
+            }
+        ]
+    }
+
     naddoddr.Mock.Adventure.adventures = [
+        naddoddr.Mock.Adventure.twostages,
         naddoddr.Mock.Adventure.basic
     ];
 
