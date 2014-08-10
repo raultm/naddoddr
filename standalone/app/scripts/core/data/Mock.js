@@ -35,6 +35,7 @@
     }
 
     naddoddr.Mock.Adventure.adventures = [
+        naddoddr.Mock.Adventure.twostages,
         naddoddr.Mock.Adventure.basic
     ];
 

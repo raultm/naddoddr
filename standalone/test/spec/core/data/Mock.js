@@ -46,8 +46,9 @@ describe('Core:Data Mock', function () {
     describe('Adventures Mocked', function(){
         it('should have an array of adventures to provide', function () {
             expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
-            expect(naddoddr.Mock.Adventure.adventures.length).toBe(1);
-            expect(naddoddr.Mock.Adventure.adventures[0]).toBe(naddoddr.Mock.Adventure.basic);
+            expect(naddoddr.Mock.Adventure.adventures.length).toBe(2);
+            expect(naddoddr.Mock.Adventure.adventures[0]).toBe(naddoddr.Mock.Adventure.twostages);
+            expect(naddoddr.Mock.Adventure.adventures[1]).toBe(naddoddr.Mock.Adventure.basic);
         });
     });
 
