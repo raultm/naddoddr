@@ -50,4 +50,15 @@ describe('Core: Adventure', function () {
         expect(AntillaAdventure.center).toEqual({'lat': 37.2071, 'lng': -7.2091, 'zoom': 14});
     });
 
+    it('should return array of markers', function () {
+        var AntillaAdventure = naddoddr.Mock.Adventure.findById(1);
+        expect(AntillaAdventure.getMarkers().length).toBe(1);
+        expect(AntillaAdventure.getMarkers()[0]).toEqual({'message': 'La Antilla', 'lat': 37.2071, 'lng': -7.2091});
+    });
+
+    it('should have a markers attribute objects', function () {
+        var AntillaAdventure = naddoddr.Mock.Adventure.findById(1);
+        expect(AntillaAdventure.markers).toEqual([{'message': 'La Antilla', 'lat': 37.2071, 'lng': -7.2091}]);
+    });
+
 });

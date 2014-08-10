@@ -9,6 +9,7 @@
     function Adventure(adventureValues){
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
+        this.markers = this.getMarkers();
         var geopoints = this.getGeopoints();
         if(geopoints.length > 0){
             this.center = {
@@ -31,6 +32,20 @@
             geopoints.push(stages[i].geopoint);
         }
         return geopoints;
+    }
+
+    Adventure.prototype.getMarkers = function(){
+        var stages = this.get('stages');
+        var markers = [];
+        for(var i in stages){
+            var marker = {
+                'message': stages[i].name,
+                'lat': stages[i].geopoint.lat,
+                'lng': stages[i].geopoint.lng
+            }
+            markers.push(marker);
+        }
+        return markers;
     }
 
     naddoddr.Adventure = Adventure;
