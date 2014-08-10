@@ -10,12 +10,20 @@
 
 angular.module('naddoddrApp')
     .controller('AdventuresCtrl', ['$scope', 'naddoddrProvider', function ($scope, naddoddrProvider) {
+        $scope.adventures = naddoddrProvider.Adventure.findAll();
+        var geopoint = $scope.adventures[0].getGeopoints()[0];
+        console.log(geopoint);
         angular.extend($scope,{
             defaults: {
+                center: {
+                    lat: geopoint.lat,
+                    lng: geopoint.lng,
+                    zoom: 4
+                },
                 scrollWheelZoom: false
             }
         });
-        $scope.adventures = naddoddrProvider.Adventure.findAll();
+
 
 //        var todosInStore = localStorageService.get('todos');
 //

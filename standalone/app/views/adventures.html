@@ -1,13 +1,12 @@
 <div class="container">
     <h2>Adventures</h2>
-    <leaflet></leaflet>
     <!-- Adventures list -->
     <div ui-sortable ng-model="adventures">
         <div class="row" ng-repeat="adventure in adventures" style="padding:5px 10px; cursor: move;">
             <div class="col-md-10 col-md-offset-1">
                 <div class="adventure-item">
                     <div>
-                        <img  class="adventure-item-bg" src="images/watercolor-europe.png">
+                        <leaflet  center="adventure._fields.stages[0].geopoint" class="adventure-item-bg" src="images/watercolor-europe.png"></leaflet>
                     </div>
                     <div class="adventure-item-content transparent">
                         <h1>{{ adventure.get('name') }}</h1>
