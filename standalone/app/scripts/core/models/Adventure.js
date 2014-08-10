@@ -9,6 +9,7 @@
     function Adventure(adventureValues){
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
+        this.markers = this.getMarkers();
         var geopoints = this.getGeopoints();
         if(geopoints.length > 0){
             this.center = {
