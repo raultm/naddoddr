@@ -9,7 +9,14 @@
     function Adventure(adventureValues){
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
-
+        var geopoints = this.getGeopoints();
+        if(geopoints.length > 0){
+            this.center = {
+                'lat': geopoints[0].lat,
+                'lng': geopoints[0].lng,
+                'zoom': 14
+            };
+        }
     }
 
     Adventure.prototype.get = function(fieldName){
@@ -25,6 +32,7 @@
         }
         return geopoints;
     }
+
     naddoddr.Adventure = Adventure;
 
 })(window, jQuery, naddoddr);
