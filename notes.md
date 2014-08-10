@@ -1,5 +1,7 @@
 # References
 
+- [2014-08-10] [GeoCoding Tool - Easy to get lat/lng values](http://itouchmap.com/latlong.html)
+- [2014-08-10] [GeoLib - Library to handle operations with geopoints](https://github.com/manuelbieh/Geolib)
 - [2014-08-10] [__noSuchMethod__ in v8?](http://dailyjs.com/2010/03/12/nosuchmethod/)
 - [2014-08-09] [Exchanging module values in AngularJS test](http://stackoverflow.com/questions/18253417/exchanging-module-values-in-angularjs-test)
 - [2014-08-08] [Jasmine Comparing Objects toBe doesn't work](http://stackoverflow.com/questions/15487510/angularjs-jasmine-comparing-objects)
