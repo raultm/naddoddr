@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Adventure</h2>
+
+    <!-- Adventures list -->
+    <div>
+        <h3>Adventure</h3>
+        <input type="text" ng-model="adventure._fields.name">
+        <input type="text" ng-model="adventure._fields.description">
+        <h4>Stages</h4>
+        <div ng-repeat="stage in adventure._fields.stages">
+            <input type="text" ng-model="stage.name">
+            <input type="text" ng-model="stage.content">
+            <input type="text" ng-model="stage.geopoint.lat">
+            <input type="text" ng-model="stage.geopoint.lng">
+        </div>
+
+    </div>
+    <div class="row" style="padding:5px 10px; cursor: move;">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="adventure-item">
+                <div>
+                    <img  class="adventure-item-bg" src="images/watercolor-europe.png">
+                </div>
+                <div class="adventure-item-content transparent">
+                    <h1>{{ adventure.get('name') }}</h1>
+                    <h3>{{ adventure.get('description') }}</h3>
+                    <p>Etapas del viaje {{ adventure.get('stages').length }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
