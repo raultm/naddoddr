@@ -25,17 +25,25 @@ angular
     }])
     .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/adventures.html',
-        controller: 'AdventuresCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+        .when('/', {
+            templateUrl: 'views/adventures.html',
+            controller: 'AdventuresCtrl'
+        })
+        .when('/adventures', {
+            templateUrl: 'views/adventures.html',
+            controller: 'AdventuresCtrl'
+        })
+        .when('/adventure/:adventureId', {
+            templateUrl: 'views/adventure.html',
+            controller: 'AdventureCtrl'
+        })
+        .when('/about', {
+            templateUrl: 'views/about.html',
+            controller: 'AboutCtrl'
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
     })
     .value('naddoddrProviderType', naddoddr.dataProvider)
     .factory('naddoddrProvider', ['naddoddrProviderType', function(naddoddrProviderType) {

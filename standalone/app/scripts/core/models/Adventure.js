@@ -9,6 +9,10 @@
     function Adventure(adventureValues){
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
+        this.refresh();
+    }
+
+    Adventure.prototype.refresh = function(){
         this.markers = this.getMarkers();
         this.center = this.calculateCenter();
         this.paths = this.getPaths();
