@@ -13,8 +13,9 @@
     }
 
     Adventure.prototype.refresh = function(){
+        console.log('refresh');
         this.markers = this.getMarkers();
-        this.center = this.calculateCenter();
+        //this.center = this.calculateCenter();
         this.paths = this.getPaths();
     }
 

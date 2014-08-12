@@ -12,5 +12,10 @@ angular.module('naddoddrApp')
     .controller('AdventureCtrl', ['$scope', '$routeParams', 'naddoddrProvider', function ($scope, $routeParams, naddoddrProvider) {
         console.log($routeParams);
         $scope.adventure = naddoddrProvider.Adventure.findById($routeParams.adventureId);
-        console.log($scope.adventure);
+
+        $scope.$watch('adventure', function() {
+            console.log("Cambios");
+            $scope.adventure.refresh();
+            console.log($scope.adventure);
+        });
     }]);

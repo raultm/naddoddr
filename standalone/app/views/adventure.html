@@ -12,6 +12,12 @@
             <input type="text" ng-model="stage.content">
             <input type="text" ng-model="stage.geopoint.lat">
             <input type="text" ng-model="stage.geopoint.lng">
+            <leaflet
+                style="height: 300px;width: 300px;"
+                class="stage-map"
+                center="stage.geopoint"
+                markers="[stage.geopoint]"
+                ></leaflet>
         </div>
 
     </div>
@@ -19,7 +25,12 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="adventure-item">
                 <div>
-                    <img  class="adventure-item-bg" src="images/watercolor-europe.png">
+                    <leaflet
+                            class="adventure-item-bg"
+                            markers="adventure.markers"
+                            center="adventure.center"
+                            paths="adventure.paths"
+                            ></leaflet>
                 </div>
                 <div class="adventure-item-content transparent">
                     <h1>{{ adventure.get('name') }}</h1>
