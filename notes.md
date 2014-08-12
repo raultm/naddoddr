@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-12] [Error: $compile:nonassign Non-Assignable Expression](https://docs.angularjs.org/error/$compile/nonassign?p0=undefined&p1=leaflet)
 - [2014-08-11] [AWS JS SDK - The Canonical Angular Guide](http://www.ng-newsletter.com/posts/aws-js-sdk.html)
 - [2014-08-10] [GeoCoding Tool - Easy to get lat/lng values](http://itouchmap.com/latlong.html)
 - [2014-08-10] [GeoLib - Library to handle operations with geopoints](https://github.com/manuelbieh/Geolib)
