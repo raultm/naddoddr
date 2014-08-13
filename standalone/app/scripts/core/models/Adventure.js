@@ -31,27 +31,21 @@
     Adventure.prototype.get = function(fieldName){
         if(this._fields[fieldName] === undefined ){ return false; }
         var field = this._fields[fieldName];
-        /*
-        if(fieldName == 'stages'){
-            var stages = $.extend({}, field);
-            console.log(stages);
-            for(var i in stages){
-                var geopoint = {};
-                stages[i].geopoint = [$.extend(geopoint, emptyGeopoint, stages[i].geopoint)];
-            }
-            field = stages;
-        }
-        */
         return field;
     }
 
-    //Adventure.prototype.getStagesForLeaflet
+//    Adventure.prototype.getFormattedStages = function(){
+//        var stages = this.get('stages');
+//        for(var i in stages){
+//            geopoints.push(stages[i].geopoint);
+//        }
+//    }
 
     Adventure.prototype.getGeopoints = function(){
         var stages = this.get('stages');
         var geopoints = [];
         for(var i in stages){
-            geopoints.push(stages[i].geopoint);
+            geopoints.push(stages[i].geopoints[0]);
         }
         return geopoints;
     }
@@ -62,8 +56,8 @@
         for(var i in stages){
             var marker = {
                 'message': stages[i].name,
-                'lat': stages[i].geopoint.lat,
-                'lng': stages[i].geopoint.lng
+                'lat': stages[i].geopoints[0].lat,
+                'lng': stages[i].geopoints[0].lng
             }
             markers.push(marker);
         }
