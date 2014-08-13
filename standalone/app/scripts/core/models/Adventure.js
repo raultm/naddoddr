@@ -6,6 +6,13 @@
         'stages': []
     };
 
+    var emptyGeopoint = {
+        'lat': 0,
+        'lng': 0,
+        'zoom': 0,
+        'message': ''
+    };
+
     function Adventure(adventureValues){
         this._fields = {};
         $.extend(this._fields, defaultAdventure, adventureValues);
@@ -13,6 +20,9 @@
     }
 
     Adventure.prototype.refresh = function(){
+        this.name = this.get('name');
+        this.description = this.get('description');
+        this.stages = this.get('stages');
         this.markers = this.getMarkers();
         this.center = this.calculateCenter();
         this.paths = this.getPaths();
@@ -20,8 +30,22 @@
 
     Adventure.prototype.get = function(fieldName){
         if(this._fields[fieldName] === undefined ){ return false; }
-        return this._fields[fieldName];
+        var field = this._fields[fieldName];
+        /*
+        if(fieldName == 'stages'){
+            var stages = $.extend({}, field);
+            console.log(stages);
+            for(var i in stages){
+                var geopoint = {};
+                stages[i].geopoint = [$.extend(geopoint, emptyGeopoint, stages[i].geopoint)];
+            }
+            field = stages;
+        }
+        */
+        return field;
     }
+
+    //Adventure.prototype.getStagesForLeaflet
 
     Adventure.prototype.getGeopoints = function(){
         var stages = this.get('stages');
