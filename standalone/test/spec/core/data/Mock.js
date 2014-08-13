@@ -61,7 +61,7 @@ describe('Core:Data Mock', function () {
             expect(naddoddr.Mock.Adventure.basic.stages.length).toBe(1);
             expect(naddoddr.Mock.Adventure.basic.stages[0].name).toBe('La Antilla');
             expect(naddoddr.Mock.Adventure.basic.stages[0].content).toBe('Duna se baña por primera vez en el Mar');
-            expect(naddoddr.Mock.Adventure.basic.stages[0].geopoint).toEqual({'lat': 37.2071, 'lng': -7.2091});
+            expect(naddoddr.Mock.Adventure.basic.stages[0].geopoints).toEqual([{'lat': 37.2071, 'lng': -7.2091, 'zoom': 14, 'message': 'La Antilla'}]);
             expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
         });
     });
@@ -75,10 +75,10 @@ describe('Core:Data Mock', function () {
             expect(naddoddr.Mock.Adventure.twostages.stages.length).toBe(2);
             expect(naddoddr.Mock.Adventure.twostages.stages[0].name).toBe('Cabrero');
             expect(naddoddr.Mock.Adventure.twostages.stages[0].content).toBe('La cuadrillas a por cerezas, Duna ruta por el pueblo');
-            expect(naddoddr.Mock.Adventure.twostages.stages[0].geopoint).toEqual({'lat': 40.112689, 'lng': -5.891976});
+            expect(naddoddr.Mock.Adventure.twostages.stages[0].geopoints).toEqual([{'lat': 40.112689, 'lng': -5.891976, 'zoom': 14, 'message': 'Cabrero'}]);
             expect(naddoddr.Mock.Adventure.twostages.stages[1].name).toBe('Kayaks');
             expect(naddoddr.Mock.Adventure.twostages.stages[1].content).toBe('Kayaks con Guia2 en el Embalse de Plasencia');
-            expect(naddoddr.Mock.Adventure.twostages.stages[1].geopoint).toEqual({'lat': 40.077683, 'lng': -6.013669});
+            expect(naddoddr.Mock.Adventure.twostages.stages[1].geopoints).toEqual([{'lat': 40.077683, 'lng': -6.013669, 'zoom': 14, 'message': 'Kayaks'}]);
         });
     });
 

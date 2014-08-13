@@ -14,8 +14,7 @@ angular.module('naddoddrApp')
         $scope.adventure = naddoddrProvider.Adventure.findById($routeParams.adventureId);
 
         $scope.$watch('adventure', function() {
-            console.log("Cambios");
+            console.log('Cambios');
             $scope.adventure.refresh();
-            console.log($scope.adventure);
-        });
+        }, true);
     }]);

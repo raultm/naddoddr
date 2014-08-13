@@ -243,7 +243,7 @@
                                 return;
                             }
                             safeApply(leafletScope, function (scope) {
-                                updateBoundsInScope(scope, map);
+//                                updateBoundsInScope(scope, map);
                                 if (centerModel) {
                                     centerModel.lat = map.getCenter().lat;
                                     centerModel.lng = map.getCenter().lng;

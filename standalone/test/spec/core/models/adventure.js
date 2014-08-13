@@ -31,18 +31,23 @@ describe('Core: Adventure', function () {
         var adventure = new naddoddr.Adventure({'name': name, 'description': description});
         expect(adventure.get('name')).toBe(name);
         expect(adventure.get('description')).toBe(description);
+        expect(adventure.get('stages')).toEqual([]);
+        expect(adventure.name).toBe(name);
+        expect(adventure.description).toBe(description);
+        expect(adventure.stages).toEqual([]);
     });
 
     it('should return false if field doesnt exist', function () {
         var name = 'La Antillas';
         var adventure = new naddoddr.Adventure({'name':name});
         expect(adventure.get('inventedField')).toBe(false);
+        expect(adventure.inventedField).not.toBe(false);
     });
 
     it('should return array of geopoints', function () {
         var AntillaAdventure = naddoddr.Mock.Adventure.findById(1);
         expect(AntillaAdventure.getGeopoints().length).toBe(1);
-        expect(AntillaAdventure.getGeopoints()[0]).toEqual({'lat': 37.2071, 'lng': -7.2091});
+        expect(AntillaAdventure.getGeopoints()[0]).toEqual({'lat': 37.2071, 'lng': -7.2091, 'zoom' : 14, 'message' : 'La Antilla'});
     });
 
     it('should have a center attribute with geopoint and default zoom to 14', function () {
@@ -69,9 +74,20 @@ describe('Core: Adventure', function () {
     it('should have a paths attribute with geopoints', function () {
         var CereceraAdventure = naddoddr.Mock.Adventure.findById(2);
         var CereceraAdventureLatlngs = [
-            naddoddr.Mock.Adventure.twostages.stages[0].geopoint,
-            naddoddr.Mock.Adventure.twostages.stages[1].geopoint
+            naddoddr.Mock.Adventure.twostages.stages[0].geopoints[0],
+            naddoddr.Mock.Adventure.twostages.stages[1].geopoints[0]
         ]
         expect(CereceraAdventure.paths).toEqual([{'color': '#008000', 'weight': 8, 'latlngs':CereceraAdventureLatlngs}]);
+    });
+
+    it('should have a stages attribute with geopoints, each of them with a leaflet format', function () {
+        var CereceraAdventure = naddoddr.Mock.Adventure.findById(2);
+
+        expect(CereceraAdventure.stages[0].name).toBe('Cabrero');
+        expect(CereceraAdventure.stages[0].content).toEqual('La cuadrillas a por cerezas, Duna ruta por el pueblo');
+        expect(CereceraAdventure.stages[0].geopoints[0].lat).toEqual(40.112689);
+        expect(CereceraAdventure.stages[0].geopoints[0].lng).toEqual(-5.891976);
+        expect(CereceraAdventure.stages[0].geopoints[0].zoom).toEqual(14);
+        expect(CereceraAdventure.stages[0].geopoints[0].message).toEqual('Cabrero');
     });
 });

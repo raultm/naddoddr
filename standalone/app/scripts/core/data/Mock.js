@@ -11,7 +11,7 @@
             {
                 'name': 'La Antilla',
                 'content': 'Duna se baña por primera vez en el Mar',
-                'geopoint': {'lat': 37.2071, 'lng': -7.2091, 'zoom': 14 , 'message': 'Cabrero'}
+                'geopoints': [{'lat': 37.2071, 'lng': -7.2091, 'zoom': 14, 'message': 'La Antilla'}]
             }
         ]
     };
@@ -24,12 +24,12 @@
             {
                 'name': 'Cabrero',
                 'content': 'La cuadrillas a por cerezas, Duna ruta por el pueblo',
-                'geopoint': [{'lat': 40.112689, 'lng': -5.891976, 'zoom': 14 , 'message': 'Cabrero'}]
+                'geopoints': [{'lat': 40.112689, 'lng': -5.891976, 'zoom': 14, 'message': 'Cabrero'}]
             },
             {
                 'name': 'Kayaks',
                 'content': 'Kayaks con Guia2 en el Embalse de Plasencia',
-                'geopoint': [{'lat': 40.077683, 'lng': -6.013669, 'zoom': 14 , 'message': 'Kayaks'}]
+                'geopoints': [{'lat': 40.077683, 'lng': -6.013669, 'zoom': 14, 'message': 'Kayaks'}]
             }
         ]
     }

@@ -8,15 +8,15 @@
         <input type="text" ng-model="adventure._fields.description">
         <h4>Stages</h4>
         <div ng-repeat="stage in adventure._fields.stages">
-            <input type="text" ng-model="stage.name">
-            <input type="text" ng-model="stage.content">
-            <input type="text" ng-model="stage.geopoint.lat">
-            <input type="text" ng-model="stage.geopoint.lng">
+            <input type="text" ng-model="$parent.adventure._fields.stages[$index].name">
+            <input type="text" ng-model="$parent.adventure._fields.stages[$index].content">
+            <input type="text" ng-model="$parent.adventure._fields.stages[$index].geopoints[0].lat">
+            <input type="text" ng-model="$parent.adventure._fields.stages[$index].geopoints[0].lng">
             <leaflet
                 style="height: 300px;width: 300px;"
                 class="stage-map"
-                center="stage.geopoint"
-                markers="[stage.geopoint]"
+                center="$parent.adventure._fields.stages[$index].geopoints[0]"
+                markers="$parent.adventure._fields.stages[$index].geopoints"
                 ></leaflet>
         </div>
 
