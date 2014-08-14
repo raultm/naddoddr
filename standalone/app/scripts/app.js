@@ -24,7 +24,7 @@ angular
     .config(['localStorageServiceProvider', function(localStorageServiceProvider){
         localStorageServiceProvider.setPrefix('naddoddr');
     }])
-    .config(function ($routeProvider) {
+    .config(['$routeProvider',function ($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'views/adventures.html',
@@ -45,7 +45,7 @@ angular
         .otherwise({
             redirectTo: '/'
         });
-    })
+    }])
     .value('naddoddrProviderType', naddoddr.dataProvider)
     .factory('naddoddrProvider', ['naddoddrProviderType', function(naddoddrProviderType) {
         if(naddoddrProviderType === 'Mock') {
