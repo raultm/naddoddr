@@ -82,4 +82,14 @@ describe('Core:Data Mock', function () {
         });
     });
 
+    describe('MediterraneCruiseAdventure', function(){
+        it('should have a many stages adventure ', function () {
+            expect(naddoddr.Mock.Adventure.manystages).toBeDefined();
+            expect(naddoddr.Mock.Adventure.manystages._id).toBe(3);
+            expect(naddoddr.Mock.Adventure.manystages.name).toBe('Crucero Mediterráneo');
+            expect(naddoddr.Mock.Adventure.manystages.description).toBe('Crucero por el mediterráneo compartido con Manoli');
+            expect(naddoddr.Mock.Adventure.manystages.stages.length).toBe(7);
+        });
+    });
+
 });

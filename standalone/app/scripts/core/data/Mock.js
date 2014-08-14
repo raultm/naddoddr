@@ -34,6 +34,43 @@
         ]
     }
 
+    naddoddr.Mock.Adventure.manystages = {
+        '_id': 3,
+        'name': 'Crucero Mediterráneo',
+        'description': 'Crucero por el mediterráneo compartido con Manoli',
+        'stages': [
+            {
+                'name': 'Málaga', 'content': '',
+                'geopoints': [{'lat': 36.7212610, 'lng': -4.4212660, 'zoom': 14, 'message': 'Málaga'}]
+            },
+            {
+                'name': 'Túnez', 'content': '',
+                'geopoints': [{'lat': 36.7212610, 'lng': 9.5374990, 'zoom': 14, 'message': 'Túnez'}]
+            },
+            {
+                'name': 'Malta', 'content': '',
+                'geopoints': [{'lat': 35.9374960, 'lng': 14.3754160, 'zoom': 14, 'message': 'Malta'}]
+            },
+            {
+                'name': 'Messina', 'content': '',
+                'geopoints': [{'lat': 38.1938140, 'lng': 15.5540150, 'zoom': 14, 'message': 'Messina'}]
+            },
+            {
+                'name': 'Olympia', 'content': '',
+                'geopoints': [{'lat': 37.6446600, 'lng': 21.6254800, 'zoom': 14, 'message': 'Olympia'}]
+            },
+            {
+                'name': 'Atenas', 'content': '',
+                'geopoints': [{'lat': 37.6446600, 'lng': 21.6254800, 'zoom': 14, 'message': 'Atenas'}]
+            },
+            {
+                'name': 'Madrid', 'content': '',
+                'geopoints': [{'lat': 37.6446600, 'lng': 21.6254800, 'zoom': 14, 'message': 'Madrid'}]
+            }
+
+        ]
+    }
+
     naddoddr.Mock.Adventure.adventures = [
         naddoddr.Mock.Adventure.twostages,
         naddoddr.Mock.Adventure.basic
