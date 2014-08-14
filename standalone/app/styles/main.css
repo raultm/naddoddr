@@ -106,3 +106,9 @@ body {
 .transparent{
     background-color: rgba(200, 200, 200, 0.6);
 }
+
+h2{
+    /*font-family: 'Dancing Script', cursive;*/
+    /*font-family: 'Handlee', cursive;*/
+    font-family: 'Satisfy', cursive;
+}
