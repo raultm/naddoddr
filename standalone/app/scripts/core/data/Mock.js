@@ -65,7 +65,7 @@
             },
             {
                 'name': 'Madrid', 'content': '',
-                'geopoints': [{'lat': 37.6446600, 'lng': 21.6254800, 'zoom': 14, 'message': 'Madrid'}]
+                'geopoints': [{'lat': 40.4167750, 'lng': -3.7037900, 'zoom': 14, 'message': 'Madrid'}]
             }
 
         ]
