@@ -71,6 +71,11 @@ describe('Core: Adventure', function () {
         expect(CereceraAdventure.center).toEqual({'lat': 40.095186, 'lng': -5.952822, 'zoom': 12});
     });
 
+    it('should have a center attribute with the middle of array of stages, use zoom 5 if distance more than 2000 kilometers between them', function () {
+        var CruiseAdventure = naddoddr.Mock.Adventure.findById(3);
+        expect(CruiseAdventure.center).toEqual({ 'lat' : 38.177136, 'lng' : 8.602107, 'zoom' : 5 });
+    });
+
     it('should have a paths attribute with geopoints', function () {
         var CereceraAdventure = naddoddr.Mock.Adventure.findById(2);
         var CereceraAdventureLatlngs = [

@@ -79,6 +79,10 @@
 
     Adventure.prototype.getZoomByDistance = function(distance){
         // Cerecera Distance -> 11.081
+        console.log(this.name, distance);
+        if(distance > 2000){
+            return 5;
+        }
         return 12;
     }
 
