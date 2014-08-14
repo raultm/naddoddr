@@ -46,9 +46,10 @@ describe('Core:Data Mock', function () {
     describe('Adventures Mocked', function(){
         it('should have an array of adventures to provide', function () {
             expect(naddoddr.Mock.Adventure.adventures).toBeDefined();
-            expect(naddoddr.Mock.Adventure.adventures.length).toBe(2);
-            expect(naddoddr.Mock.Adventure.adventures[0]).toBe(naddoddr.Mock.Adventure.twostages);
-            expect(naddoddr.Mock.Adventure.adventures[1]).toBe(naddoddr.Mock.Adventure.basic);
+            expect(naddoddr.Mock.Adventure.adventures.length).toBe(3);
+            expect(naddoddr.Mock.Adventure.adventures[0]).toBe(naddoddr.Mock.Adventure.manystages);
+            expect(naddoddr.Mock.Adventure.adventures[1]).toBe(naddoddr.Mock.Adventure.twostages);
+            expect(naddoddr.Mock.Adventure.adventures[2]).toBe(naddoddr.Mock.Adventure.basic);
         });
     });
 
@@ -79,6 +80,16 @@ describe('Core:Data Mock', function () {
             expect(naddoddr.Mock.Adventure.twostages.stages[1].name).toBe('Kayaks');
             expect(naddoddr.Mock.Adventure.twostages.stages[1].content).toBe('Kayaks con Guia2 en el Embalse de Plasencia');
             expect(naddoddr.Mock.Adventure.twostages.stages[1].geopoints).toEqual([{'lat': 40.077683, 'lng': -6.013669, 'zoom': 14, 'message': 'Kayaks'}]);
+        });
+    });
+
+    describe('MediterraneCruiseAdventure', function(){
+        it('should have a many stages adventure ', function () {
+            expect(naddoddr.Mock.Adventure.manystages).toBeDefined();
+            expect(naddoddr.Mock.Adventure.manystages._id).toBe(3);
+            expect(naddoddr.Mock.Adventure.manystages.name).toBe('Crucero Mediterráneo');
+            expect(naddoddr.Mock.Adventure.manystages.description).toBe('Crucero por el mediterráneo compartido con Manoli');
+            expect(naddoddr.Mock.Adventure.manystages.stages.length).toBe(7);
         });
     });
 
