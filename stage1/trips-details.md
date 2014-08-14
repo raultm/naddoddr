@@ -21,3 +21,11 @@ TDD (Trips name for  Adventures name?)
 
 If I test an Object like "Adventure", can I use it with angularjs without problems or is better to create a prototype in angularjs
 
+Create Data Providers aout of angular.
+naddoddr.MockData
+naddoddr.LocalData
+....
+
+In an angularJS Factory using a naddoddr DATA configuration select one of the DATAPROVIDERS availables.
+naddoddr.DATAPROVIDERS = ['Mock', 'Local']
+naddoddr.DATA = 'Mock'
