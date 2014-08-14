@@ -61,7 +61,7 @@
             },
             {
                 'name': 'Atenas', 'content': '',
-                'geopoints': [{'lat': 37.6446600, 'lng': 21.6254800, 'zoom': 14, 'message': 'Atenas'}]
+                'geopoints': [{'lat': 37.9839170, 'lng': 23.7293600, 'zoom': 14, 'message': 'Atenas'}]
             },
             {
                 'name': 'Madrid', 'content': '',
