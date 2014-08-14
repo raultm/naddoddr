@@ -14,10 +14,6 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -30,7 +26,6 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 /* Customize container */
@@ -111,4 +106,27 @@ h2{
     /*font-family: 'Dancing Script', cursive;*/
     /*font-family: 'Handlee', cursive;*/
     font-family: 'Satisfy', cursive;
+}
+
+.naddoddr-title{
+    font-family: 'Satisfy', cursive;
+}
+
+.naddoddr-h1{
+    padding-top: 20px;
+    font-size: 70px;
+}
+
+.naddoddr-h2{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.homelink{
+    height: 100px;
+}
+
+a, a:hover{
+    color: #555555;
+    text-decoration: none;
 }

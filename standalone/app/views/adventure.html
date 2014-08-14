@@ -1,28 +1,11 @@
 <div class="container">
-    <h2>Adventure</h2>
-
-    <!-- Adventures list -->
-    <div>
-        <h3>Adventure</h3>
-        <input type="text" ng-model="adventure._fields.name">
-        <input type="text" ng-model="adventure._fields.description">
-        <h4>Stages</h4>
-        <div ng-repeat="stage in adventure._fields.stages">
-            <input type="text" ng-model="$parent.adventure._fields.stages[$index].name">
-            <input type="text" ng-model="$parent.adventure._fields.stages[$index].content">
-            <input type="text" ng-model="$parent.adventure._fields.stages[$index].geopoints[0].lat">
-            <input type="text" ng-model="$parent.adventure._fields.stages[$index].geopoints[0].lng">
-            <leaflet
-                style="height: 300px;width: 300px;"
-                class="stage-map"
-                center="$parent.adventure._fields.stages[$index].geopoints[0]"
-                markers="$parent.adventure._fields.stages[$index].geopoints"
-                ></leaflet>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <p class="naddoddr-title naddoddr-h1">Adventure</p>
         </div>
-
     </div>
     <div class="row" style="padding:5px 10px; cursor: move;">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-5 col-md-offset-1">
             <div class="adventure-item">
                 <div>
                     <leaflet
@@ -39,6 +22,25 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-5" >
+            <input class="form-control" type="text" ng-model="adventure._fields.name">
+            <input class="form-control" type="text" ng-model="adventure._fields.description">
+            <p class="naddoddr-title naddoddr-h2">Stages</p>
+            <div ui-sortable style="overflow-y: scroll; height:400px;">
+                <div ng-repeat="stage in adventure._fields.stages" style="padding:10px;">
+                    <input class="form-control" type="text" ng-model="stage.name">
+                    <input type="hidden" ng-model="stage.content">
+                    <input type="hidden" ng-model="stage.geopoints[0].lat">
+                    <input type="hidden" ng-model="stage.geopoints[0].lng">
+                    <leaflet
+                            style="height: 100px;width: 100%;"
+                            class="stage-map"
+                            center="stage.geopoints[0]"
+                            markers="stage.geopoints"
+                            defaults="defaults"
+                            ></leaflet>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>

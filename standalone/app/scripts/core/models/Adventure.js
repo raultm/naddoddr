@@ -35,7 +35,7 @@
     }
 
     Adventure.prototype.getGeopoints = function(){
-        var stages = this.get('stages');
+        var stages = this.stages;
         var geopoints = [];
         for(var i in stages){
             geopoints.push(stages[i].geopoints[0]);
