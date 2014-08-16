@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-16] [DevRaulete Blog - First Post about the project](http://dev.raulete.com/2014/08/naddoddr.html)
 - [2014-08-15] [Pre-Alfa Version](http://raultm.github.io/naddoddr/stage2/)
 - [2014-08-14] [Injector error after dist (minify js task)](http://stackoverflow.com/questions/19671962/uncaught-error-injectorunpr-with-angular-after-deployment)
 - [2014-08-12] [Error: $compile:nonassign Non-Assignable Expression](https://docs.angularjs.org/error/$compile/nonassign?p0=undefined&p1=leaflet)
