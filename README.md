@@ -3,6 +3,10 @@ Naddoddr
 
 The idea behind this project is a webapp where the users can track their travels and share them with their friends/families
 
+Current Status
+---------------
+[Pre-alfa version](http://raultm.github.io/naddoddr/stage2/). 
+
 Database schema definition
 --------------------------
 ```
