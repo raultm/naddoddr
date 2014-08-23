@@ -27,16 +27,20 @@ angular
     .config(['$routeProvider',function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'views/adventures.html',
+            templateUrl: 'views/adventures.index.html',
             controller: 'AdventuresCtrl'
         })
         .when('/adventures', {
-            templateUrl: 'views/adventures.html',
+            templateUrl: 'views/adventures.index.html',
             controller: 'AdventuresCtrl'
         })
-        .when('/adventure/:adventureId', {
-            templateUrl: 'views/adventure.html',
-            controller: 'AdventureCtrl'
+        .when('/adventure/view/:adventureId', {
+            templateUrl: 'views/adventure.view.html',
+            controller: 'AdventureViewCtrl'
+        })
+        .when('/adventure/edit/:adventureId', {
+            templateUrl: 'views/adventure.edit.html',
+            controller: 'AdventureEditCtrl'
         })
         .when('/about', {
             templateUrl: 'views/about.html',

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <p class="naddoddr-title naddoddr-h1">Adventure</p>
+        </div>
+    </div>
+    <div class="row" style="padding:5px 10px; cursor: move;">
+        <div class="col-md-5 col-md-offset-1">
+            <div class="adventure-item">
+                <div>
+                    <leaflet
+                            class="adventure-item-bg"
+                            markers="adventure.markers"
+                            center="adventure.center"
+                            paths="adventure.paths"
+                            ></leaflet>
+                </div>
+                <div class="adventure-item-content transparent">
+                    <h1>{{ adventure.get('name') }}</h1>
+                    <h3>{{ adventure.get('description') }}</h3>
+                    <p>Etapas del viaje {{ adventure.get('stages').length }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5" >
+            <input class="form-control" type="text" ng-model="adventure._fields.name">
+            <input class="form-control" type="text" ng-model="adventure._fields.description">
+            <p class="naddoddr-title naddoddr-h2">Stages</p>
+            <div ui-sortable style="overflow-y: scroll; height:400px;">
+                <div ng-repeat="stage in adventure._fields.stages" style="padding:10px;">
+                    <input class="form-control" type="text" ng-model="stage.name">
+                    <input type="hidden" ng-model="stage.content">
+                    <input type="hidden" ng-model="stage.geopoints[0].lat">
+                    <input type="hidden" ng-model="stage.geopoints[0].lng">
+                    <leaflet
+                            style="height: 100px;width: 100%;"
+                            class="stage-map"
+                            center="stage.geopoints[0]"
+                            markers="stage.geopoints"
+                            defaults="defaults"
+                            ></leaflet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
