@@ -23,6 +23,8 @@
     "naddoddr": false,
     "jQuery": false,
     "L": false,
+    "O": false,
+    "$": false,
     "lvector": false
   }
 }
