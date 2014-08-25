@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-25] [Documentación Odyssey - Intentando hacer funcionar con Angular](http://cartodb.github.io/odyssey.js/documentation/)
 - [2014-08-21] [¿Versión de NodeWebKit?](https://github.com/rogerwang/node-webkit)
 - [2014-08-16] [DevRaulete Blog - First Post about the project](http://dev.raulete.com/2014/08/naddoddr.html)
 - [2014-08-15] [Pre-Alfa Version](http://raultm.github.io/naddoddr/stage2/)
