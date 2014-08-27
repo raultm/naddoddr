@@ -1,5 +1,6 @@
 # References
 
+- [2014-08-27] [How to load a different layout in angularjs](http://stackoverflow.com/questions/17273671/how-to-load-a-different-layout-in-angularjs)
 - [2014-08-26] [Execute js Code after render](http://stackoverflow.com/questions/16935766/run-jquery-code-after-angularjs-completes-rendering-html)
 - [2014-08-25] [Documentación Odyssey - Intentando hacer funcionar con Angular](http://cartodb.github.io/odyssey.js/documentation/)
 - [2014-08-21] [¿Versión de NodeWebKit?](https://github.com/rogerwang/node-webkit)
