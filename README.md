@@ -1,5 +1,6 @@
 Naddoddr
 ========
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/raultm/naddoddr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The idea behind this project is a webapp where the users can track their travels and share them with their friends/families
 
